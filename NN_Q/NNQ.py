@@ -144,8 +144,7 @@ def models(i, m):
     evaluate_set = test_set.loc[:, ['prcp(mm/day)','flow(mm)']]
     evaluate_set['flow_obs'] = evaluate_set['flow(mm)']
     variables = ['ps', 'pr', 's0', 's1', 'm', 'et','flow_sim']
-    
-    print (np.shape(flow))
+
     
     for tt in range (7):
         
